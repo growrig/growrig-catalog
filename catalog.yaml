@@ -1,0 +1,24 @@
+# GrowRig catalog manifest.
+#
+# Every GrowRig catalog repository carries this file at its root. GrowRig
+# reads it to identify the catalog and discover which content kinds the
+# repository provides. Each entry in `provides` corresponds to a top-level
+# directory of the same name using the standard GrowRig catalog layout:
+#
+#   devices/<category>/<device-id>/device.yaml
+#   integrations/<category>/<bundle-id>/integration.yaml
+#   species/<species-id>/species.yaml
+#   inventory/<category-id>/inventory.yaml
+#   vendors/<vendor-id>/vendor.yaml
+manifest: 1
+id: growrig-catalog
+name: GrowRig Official Catalog
+description: Default devices, integrations, species, inventory categories and vendors shipped with GrowRig.
+maintainer: GrowRig
+homepage: https://github.com/growrig/growrig-catalog
+provides:
+  - devices
+  - integrations
+  - species
+  - inventory
+  - vendors
