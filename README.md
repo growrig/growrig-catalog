@@ -44,3 +44,19 @@ tent, controller, fan, sensor, light, plug, camera, combo) and reference any
 product images relative to the device directory. Run the platform's
 `make test` with your changes checked out inside the platform repo's
 `catalog/` submodule.
+
+## Releasing
+
+The catalog is content-only, so a release is a validated, tagged snapshot — no
+build. Note changes under `## Unreleased` in [`CHANGELOG.md`](CHANGELOG.md) as
+you go, then from a clean `main`:
+
+```bash
+make release VERSION=0.2.0
+```
+
+This dates the CHANGELOG section, tags `v0.2.0`, and pushes. CI
+([`release.yml`](.github/workflows/release.yml)) re-runs schema validation and
+cuts the GitHub Release. The platform pins this repo's submodule to a catalog
+tag and refuses to release against anything but the latest one, so releasing
+here is what lets new content ship in a platform release.

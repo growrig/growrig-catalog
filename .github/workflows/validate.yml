@@ -5,6 +5,7 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  workflow_call: # reused as the gate by release.yml
 
 jobs:
   schema:

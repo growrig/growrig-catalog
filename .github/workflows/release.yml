@@ -1,0 +1,46 @@
+# Release the GrowRig catalog: validate, then cut a GitHub Release from the
+# CHANGELOG. The catalog is content-only, so there is nothing to build or
+# publish — the git tag vX.Y.Z is the release, and the platform pins this repo's
+# submodule to it. Cut releases with `make release VERSION=X.Y.Z`.
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  # Gate: the same schema validation that runs on every PR must pass.
+  validate:
+    uses: ./.github/workflows/validate.yml
+
+  release:
+    needs: validate
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # create the GitHub Release
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Create GitHub Release
+        env:
+          VERSION: ${{ github.ref_name }}
+          TAG: ${{ github.ref_name }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          ver="${VERSION#v}"
+          notes="$(awk -v ver="$ver" '
+            $0 ~ "^## " ver ( " " ) { grab=1; next }
+            grab && /^## / { exit }
+            grab { print }
+          ' CHANGELOG.md)"
+          [ -n "$notes" ] || notes="See CHANGELOG.md."
+          gh release create "$TAG" \
+            --title "$TAG" \
+            --notes "$notes" \
+            --verify-tag
