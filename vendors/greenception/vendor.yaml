@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
+name: Greenception
+color: "#ffffff"
+background: "#009933"
+website: https://greenception.com/

@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
+name: Optic LED
+color: "#ffffff"
+background: "#003366"
+website: https://www.opticled.com/

@@ -106,6 +106,228 @@ products:
       - id: viparspectra-xs3000-pro
         model: XS3000 Pro
         specs: { wattage: 300, coverageWidthFt: 3, coverageDepthFt: 3 }
+  - id: sanlight-led-series
+    vendor: sanlight
+    brand: SANlight
+    model: LED Grow Light Series
+    description: Austrian full-spectrum LED grow lights with high efficiency and precise spectra.
+    models:
+      - id: sanlight-q1b
+        model: Q1B
+        specs: { wattage: 30, coverageWidthCm: 40, coverageDepthCm: 40 }
+      - id: sanlight-q3b
+        model: Q3B
+        specs: { wattage: 90, coverageWidthCm: 70, coverageDepthCm: 70 }
+      - id: sanlight-q4b
+        model: Q4B
+        specs: { wattage: 180, coverageWidthCm: 100, coverageDepthCm: 100 }
+      - id: sanlight-s4b
+        model: S4B
+        specs: { wattage: 100, coverageWidthCm: 80, coverageDepthCm: 80 }
+  - id: lumatek-led-series
+    vendor: lumatek
+    brand: Lumatek
+    model: LED Grow Light Series
+    description: Full-spectrum LED fixtures with high PPF and efficient heat management.
+    models:
+      - id: lumatek-apollo-4
+        model: Apollo 4
+        specs: { wattage: 400, coverageWidthCm: 100, coverageDepthCm: 100 }
+      - id: lumatek-venus-200
+        model: Venus 200W
+        specs: { wattage: 200, coverageWidthCm: 80, coverageDepthCm: 80 }
+      - id: lumatek-venus-480
+        model: Venus 480W
+        specs: { wattage: 480, coverageWidthCm: 120, coverageDepthCm: 120 }
+  - id: hlg-led-series
+    vendor: hlg
+    brand: Horticulture Lighting Group
+    model: HLG LED Series
+    description: Quantum board LED lights with Samsung LM301B diodes and high efficiency.
+    models:
+      - id: hlg-100
+        model: HLG 100
+        specs: { wattage: 100, coverageWidthCm: 60, coverageDepthCm: 60 }
+      - id: hlg-260
+        model: HLG 260
+        specs: { wattage: 260, coverageWidthCm: 90, coverageDepthCm: 90 }
+      - id: hlg-550
+        model: HLG 550
+        specs: { wattage: 550, coverageWidthCm: 150, coverageDepthCm: 150 }
+      - id: hlg-sc2000
+        model: SC2000
+        specs: { wattage: 200, coverageWidthCm: 120, coverageDepthCm: 60 }
+  - id: phlizon-led-series
+    vendor: phlizon
+    brand: Phlizon
+    model: LED Grow Light Series
+    description: Affordable full-spectrum LED grow lights for various grow sizes.
+    models:
+      - id: phlizon-600
+        model: 600W LED
+        specs: { wattage: 100, coverageWidthCm: 60, coverageDepthCm: 60 }
+      - id: phlizon-1000
+        model: 1000W LED
+        specs: { wattage: 150, coverageWidthCm: 90, coverageDepthCm: 90 }
+      - id: phlizon-2000
+        model: 2000W LED
+        specs: { wattage: 300, coverageWidthCm: 120, coverageDepthCm: 120 }
+  - id: migro-led-series
+    vendor: migro
+    brand: Migro
+    model: LED Grow Light Series
+    description: High-efficiency quantum board lights with Samsung diodes.
+    models:
+      - id: migro-ar11
+        model: AR11
+        specs: { wattage: 100, coverageWidthCm: 60, coverageDepthCm: 60 }
+      - id: migro-ar12
+        model: AR12
+        specs: { wattage: 200, coverageWidthCm: 90, coverageDepthCm: 90 }
+      - id: migro-ar6
+        model: AR6
+        specs: { wattage: 340, coverageWidthCm: 120, coverageDepthCm: 120 }
+  - id: greenception-led-series
+    vendor: greenception
+    brand: Greenception
+    model: LED Grow Light Series
+    description: Full-spectrum LED lights with high PPF and efficient design.
+    models:
+      - id: greenception-gcxl1000
+        model: GCXL1000
+        specs: { wattage: 100, coverageWidthCm: 60, coverageDepthCm: 60 }
+      - id: greenception-gcxl2000
+        model: GCXL2000
+        specs: { wattage: 240, coverageWidthCm: 100, coverageDepthCm: 100 }
+      - id: greenception-gcxl3000
+        model: GCXL3000
+        specs: { wattage: 300, coverageWidthCm: 120, coverageDepthCm: 120 }
+  - id: optic-led-series
+    vendor: optic-led
+    brand: Optic LED
+    model: LED Grow Light Series
+    description: Premium full-spectrum LED grow lights with multiple spectrums.
+    models:
+      - id: optic-led-apollo-10
+        model: APOLLO 10
+        specs: { wattage: 270, coverageWidthCm: 100, coverageDepthCm: 100 }
+      - id: optic-led-apollo-8
+        model: APOLLO 8
+        specs: { wattage: 210, coverageWidthCm: 90, coverageDepthCm: 90 }
+      - id: optic-led-apollo-6
+        model: APOLLO 6
+        specs: { wattage: 150, coverageWidthCm: 75, coverageDepthCm: 75 }
+  - id: secret-jardin-led-series
+    vendor: secret-jardin
+    brand: Secret Jardin
+    model: LED Grow Light Series
+    description: Full-spectrum LED lights designed for grow tents.
+    models:
+      - id: secret-jardin-dr250
+        model: DR250
+        specs: { wattage: 100, coverageWidthCm: 60, coverageDepthCm: 60 }
+      - id: secret-jardin-dr400
+        model: DR400
+        specs: { wattage: 200, coverageWidthCm: 90, coverageDepthCm: 90 }
+  - id: kingbrite-led-series
+    vendor: kingbrite
+    brand: Kingbrite
+    model: LED Grow Light Series
+    description: Budget-friendly quantum board LED lights with Samsung diodes.
+    models:
+      - id: kingbrite-100w
+        model: 100W QB
+        specs: { wattage: 100, coverageWidthCm: 60, coverageDepthCm: 60 }
+      - id: kingbrite-200w
+        model: 200W QB
+        specs: { wattage: 200, coverageWidthCm: 90, coverageDepthCm: 90 }
+      - id: kingbrite-300w
+        model: 300W QB
+        specs: { wattage: 300, coverageWidthCm: 120, coverageDepthCm: 120 }
+  - id: maxsisun-led-series
+    vendor: maxsisun
+    brand: Maxsisun
+    model: LED Grow Light Series
+    description: Affordable full-spectrum LED grow lights for home growers.
+    models:
+      - id: maxsisun-p100
+        model: P100
+        specs: { wattage: 100, coverageWidthCm: 60, coverageDepthCm: 60 }
+      - id: maxsisun-p200
+        model: P200
+        specs: { wattage: 200, coverageWidthCm: 90, coverageDepthCm: 90 }
+      - id: maxsisun-p300
+        model: P300
+        specs: { wattage: 300, coverageWidthCm: 120, coverageDepthCm: 120 }
+  - id: medic-grow-led-series
+    vendor: medic-grow
+    brand: Medic Grow
+    model: LED Grow Light Series
+    description: Full-spectrum LED lights with high efficiency and customizable spectrums.
+    models:
+      - id: medic-grow-eco-300
+        model: ECO 300
+        specs: { wattage: 300, coverageWidthCm: 100, coverageDepthCm: 100 }
+      - id: medic-grow-eco-400
+        model: ECO 400
+        specs: { wattage: 400, coverageWidthCm: 120, coverageDepthCm: 120 }
+      - id: medic-grow-eco-600
+        model: ECO 600
+        specs: { wattage: 600, coverageWidthCm: 150, coverageDepthCm: 150 }
+  - id: bloom-plus-led-series
+    vendor: bloom-plus
+    brand: Bloom Plus
+    model: LED Grow Light Series
+    description: Full-spectrum LED grow lights with Samsung diodes.
+    models:
+      - id: bloom-plus-300
+        model: 300W LED
+        specs: { wattage: 300, coverageWidthCm: 100, coverageDepthCm: 100 }
+      - id: bloom-plus-500
+        model: 500W LED
+        specs: { wattage: 500, coverageWidthCm: 120, coverageDepthCm: 120 }
+  - id: lumii-led-series
+    vendor: lumii
+    brand: LUMii
+    model: LED Grow Light Series
+    description: Full-spectrum LED and HPS lighting solutions for indoor growing.
+    models:
+      - id: lumii-led-300
+        model: LED 300W
+        specs: { wattage: 300, coverageWidthCm: 100, coverageDepthCm: 100 }
+      - id: lumii-led-600
+        model: LED 600W
+        specs: { wattage: 600, coverageWidthCm: 140, coverageDepthCm: 140 }
+  - id: todogrowled-led-series
+    vendor: todogrowled
+    brand: TodoGrowLed
+    model: LED Grow Light Series
+    description: Full-spectrum LED grow lights for various cultivation needs.
+    models:
+      - id: todogrowled-100w
+        model: 100W LED
+        specs: { wattage: 100, coverageWidthCm: 60, coverageDepthCm: 60 }
+      - id: todogrowled-300w
+        model: 300W LED
+        specs: { wattage: 300, coverageWidthCm: 100, coverageDepthCm: 100 }
+      - id: todogrowled-500w
+        model: 500W LED
+        specs: { wattage: 500, coverageWidthCm: 130, coverageDepthCm: 130 }
+  - id: the-jungle-led-series
+    vendor: the-jungle
+    brand: The Jungle
+    model: LED Grow Light Series
+    description: European full-spectrum LED grow lights with high efficiency.
+    models:
+      - id: the-jungle-100
+        model: J100
+        specs: { wattage: 100, coverageWidthCm: 60, coverageDepthCm: 60 }
+      - id: the-jungle-200
+        model: J200
+        specs: { wattage: 200, coverageWidthCm: 90, coverageDepthCm: 90 }
+      - id: the-jungle-400
+        model: J400
+        specs: { wattage: 400, coverageWidthCm: 120, coverageDepthCm: 120 }
 provides:
   - label: Grow light
     kind: light

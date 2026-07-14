@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
+name: TodoGrowLed
+color: "#ffffff"
+background: "#009966"
+website: https://todogrowled.com/

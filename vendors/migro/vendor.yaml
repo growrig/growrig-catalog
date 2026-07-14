@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
+name: Migro
+color: "#ffffff"
+background: "#cc0000"
+website: https://migrolight.com/

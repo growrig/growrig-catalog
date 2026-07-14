@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
+name: Phlizon
+color: "#ffffff"
+background: "#ff6600"
+website: https://www.phlizon.com/

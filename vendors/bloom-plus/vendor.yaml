@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
+name: Bloom Plus
+color: "#ffffff"
+background: "#cc3366"
+website: https://bloomplus.com/

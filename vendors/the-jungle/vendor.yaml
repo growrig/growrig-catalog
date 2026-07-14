@@ -1,0 +1,5 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
+name: The Jungle
+color: "#ffffff"
+background: "#004d00"
+website: https://thejungle.eu/
