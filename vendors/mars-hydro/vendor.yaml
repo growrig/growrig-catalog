@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
 name: Mars Hydro
 logo: logo.webp
 color: "#8fd14f"

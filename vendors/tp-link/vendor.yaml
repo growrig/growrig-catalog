@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
 name: TP-Link
 color: "#007f82"
 background: "#ffffff"

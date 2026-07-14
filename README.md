@@ -1,6 +1,6 @@
 # GrowRig Official Catalog
 
-The default content catalog shipped with [GrowRig](https://github.com/growrig/growrig-platform):
+The default content catalog shipped with [GrowRig](https://github.com/growrig/growrig):
 supported devices, integration bundles, crop species, inventory categories and
 vendors. The platform repository links it as a git submodule at `catalog/`.
 

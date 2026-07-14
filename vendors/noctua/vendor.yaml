@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
 name: Noctua
 color: "#6c351e"
 logo: noctua.webp

@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/device.json
 brand: TP-Link
 vendor: tp-link
 model: Tapo P110 smart plug

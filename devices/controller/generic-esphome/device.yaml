@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/device.json
 brand: generic
 model: Generic ESPHome controller
 connection: esphome

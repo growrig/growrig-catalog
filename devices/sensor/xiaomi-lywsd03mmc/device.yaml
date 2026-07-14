@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/device.json
 brand: Xiaomi
 vendor: xiaomi
 model: LYWSD03MMC (Mijia BLE)

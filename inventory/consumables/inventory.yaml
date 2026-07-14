@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/inventory.json
 # Consumables — things used up over a grow and reordered regularly:
 # nutrients & additives, growing media, pH/calibration solutions, cleaning
 # products, filters and other regularly replaced items.

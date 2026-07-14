@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/species.json
 # Cannabis species definition.
 #
 # `stages` is the ordered cultivation sequence (and the per-stage default daily

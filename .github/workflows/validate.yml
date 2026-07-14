@@ -1,0 +1,50 @@
+name: Validate catalog
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out catalog
+        uses: actions/checkout@v4
+
+      - name: Check out schemas
+        uses: actions/checkout@v4
+        with:
+          repository: growrig/growrig
+          path: .schemas
+          sparse-checkout: schema
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install validator
+        run: pipx install check-jsonschema
+
+      - name: Validate against catalog schemas
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          S=.schemas/schema/catalog
+          # validate <schema> <files...> — skips a kind with no files.
+          validate() {
+            local schema="$1"; shift
+            if [ "$#" -eq 0 ]; then return 0; fi
+            echo "→ $schema ($#)"
+            check-jsonschema --schemafile "$schema" "$@"
+          }
+          validate "$S/manifest.schema.yaml"    catalog.yaml
+          validate "$S/device.schema.yaml"      devices/*/*/device.yaml
+          validate "$S/integration.schema.yaml" integrations/*/*/integration.yaml
+          validate "$S/species.schema.yaml"     species/*/species.yaml
+          validate "$S/feedings.schema.yaml"    species/*/feedings.yaml
+          validate "$S/inventory.schema.yaml"   inventory/*/inventory.yaml
+          validate "$S/products.schema.yaml"    inventory/*/products.yaml
+          validate "$S/vendor.schema.yaml"      vendors/*/vendor.yaml

@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/inventory.json
 # Harvest & storage — jars and bags; labels; drying and trimming supplies.
 label: Harvest & storage
 description: Jars, bags, labels, drying and trimming supplies.

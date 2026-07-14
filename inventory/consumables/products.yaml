@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/products.json
 # Built-in product templates for the Consumables category.
 #
 # Picking one in the item form pre-fills the item's name, size and columns, and

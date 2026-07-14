@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/vendor.json
 name: SwitchBot
 color: "#e63329"
 background: "#ffffff"

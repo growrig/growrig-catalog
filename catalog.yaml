@@ -1,3 +1,4 @@
+# yaml-language-server: $schema=https://growrig.dev/schema/catalog/manifest.json
 # GrowRig catalog manifest.
 #
 # Every GrowRig catalog repository carries this file at its root. GrowRig
