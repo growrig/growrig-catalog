@@ -1,9 +1,12 @@
 # yaml-language-server: $schema=https://growrig.dev/schema/catalog/species.json
 label: Basil
+# `optional: true` stages a grower may include or omit per grow; `default: false`
+# keeps one off unless the grower opts in.
 stages:
-  - { name: seedling, lightHours: 18 }
-  - { name: growth, lightHours: 18 }
-  - { name: harvest, lightHours: 12 }
+  - { name: germination, lightHours: 18, typicalDays: 5, optional: true, default: false }
+  - { name: seedling, lightHours: 18, typicalDays: 14, optional: true }
+  - { name: growth, lightHours: 18, typicalDays: 28 }
+  - { name: harvest, lightHours: 12, typicalDays: 42 }
 cultivarAttributes:
   - { key: daysToMaturity, label: Days to maturity, type: number, unit: days }
 careActions:

@@ -1,10 +1,13 @@
 # yaml-language-server: $schema=https://growrig.dev/schema/catalog/species.json
 label: Tomato
+# `optional: true` stages a grower may include or omit per grow; `default: false`
+# keeps one off unless the grower opts in.
 stages:
-  - { name: seedling, lightHours: 18 }
-  - { name: growth, lightHours: 18 }
-  - { name: flowering, lightHours: 12 }
-  - { name: fruiting, lightHours: 12 }
+  - { name: germination, lightHours: 18, typicalDays: 5, optional: true, default: false }
+  - { name: seedling, lightHours: 18, typicalDays: 21, optional: true }
+  - { name: growth, lightHours: 18, typicalDays: 28 }
+  - { name: flowering, lightHours: 12, typicalDays: 21 }
+  - { name: fruiting, lightHours: 12, typicalDays: 45 }
 cultivarAttributes:
   - { key: growthHabit, label: Growth habit, type: enum, options: [determinate, indeterminate] }
   - { key: daysToMaturity, label: Days to maturity, type: number, unit: days }
