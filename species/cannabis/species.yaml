@@ -38,6 +38,7 @@ careActions:
   - { key: train,      label: Train,         icon: spline,        fields: [trainType, note, photos] }
   - { key: trim,       label: Trim / prune,  icon: scissors,      fields: [note, photos] }
   - { key: transplant, label: Transplant,    icon: shovel,        fields: [potSize, note] }
+  - { key: amend,      label: Amend / top-dress, icon: layers,   fields: [recipe, doses, note] }
   - { key: treat,      label: Spray / treat, icon: spray-can,     fields: [product, note] }
   - { key: flush,      label: Flush,         icon: waves,         fields: [amount, runoff, note] }
   - { key: harvest,    label: Harvest,       icon: sprout,        fields: [note] }

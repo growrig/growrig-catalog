@@ -11,10 +11,11 @@
 #   species/<species-id>/species.yaml
 #   inventory/<category-id>/inventory.yaml
 #   vendors/<vendor-id>/vendor.yaml
+#   mediums/mediums.yaml
 manifest: 1
 id: growrig-catalog
 name: GrowRig Official Catalog
-description: Default devices, integrations, species, inventory categories and vendors shipped with GrowRig.
+description: Default devices, integrations, species, inventory categories, vendors and medium recipes shipped with GrowRig.
 maintainer: GrowRig
 homepage: https://github.com/growrig/growrig-catalog
 provides:
@@ -23,3 +24,4 @@ provides:
   - species
   - inventory
   - vendors
+  - mediums

@@ -94,3 +94,49 @@ presets:
         stage: flush
         weeks:
           - doses: {}
+
+  # BioTabs — an organic "just add water" regime rather than a weekly liquid
+  # chart: slow-release tablets and dry inoculants go into the substrate once,
+  # and plain water carries the grow from there.
+  #
+  # Only the tablet rate below is taken from BioTabs' own product page (1 tablet
+  # per 5 L of substrate, buried 5–10 cm; NPK 15-7-8). The powders and liquids
+  # are listed as products but left undosed on purpose — the published figures
+  # for them disagree between sources, so fill them in from the chart that came
+  # with your kit rather than trusting a number transcribed here.
+  - id: biotabs-just-add-water
+    name: BioTabs Just Add Water
+    brand: BioTabs
+    description: >-
+      BioTabs organic regime for soil and coco: slow-release tablets plus
+      mycorrhiza and bacteria worked into the substrate at planting, then plain
+      water. Tablet rate is BioTabs' published 1 per 5 L of substrate (use 1 per
+      10 L in pots above 40 L). The remaining products ship undosed — enter the
+      amounts from your kit's chart before relying on this schedule.
+    unit: ml/L
+    products:
+      - { key: biotabs, label: BioTabs tablets, unit: tabs, basis: substrate }
+      - { key: mycotrex, label: Mycotrex, unit: g, basis: plant }
+      - { key: bactrex, label: Bactrex, unit: g, basis: plant }
+      - { key: startrex, label: Startrex, unit: g, basis: substrate }
+      - { key: silicium-flash, label: Silicium Flash, unit: g, basis: substrate }
+      - { key: orgatrex, label: Orgatrex }
+      - { key: bio-pk, label: Bio PK 5-8 }
+    phases:
+      # Worked through the substrate and dropped into the planting hole.
+      - name: Substrate preparation
+        stage: seedling
+        trigger: planting
+        doses: { biotabs: 0.2 }
+      # Pot-up: the new substrate volume needs its own tablets.
+      - name: Pot-up
+        trigger: transplant
+        doses: { biotabs: 0.2 }
+      - name: Vegetative (plain water)
+        stage: vegetative
+        weeks:
+          - doses: {}
+      - name: Flowering (plain water)
+        stage: flowering
+        weeks:
+          - doses: {}

@@ -1,0 +1,32 @@
+brand: AutoPot
+vendor: autopot
+model: Watering System
+connection: passive
+description: >-
+  AutoPot is a gravity-fed watering system: a raised reservoir feeds trays
+  through AQUAvalves, refilling each pot only as the plant drinks. It needs no
+  pump or power, so GrowRig tracks it as passive equipment — no Home Assistant
+  entity. Its presence marks the grow as auto-watered; you top up the reservoir
+  and check pH/EC instead of hand-watering. Pick your kit below, or choose
+  "Custom" and enter the reservoir size and tray count by hand.
+# Concrete AutoPot kits. Specs pre-fill the install form; reservoirL is the feed
+# reservoir volume in litres and valveCount the number of AQUAvalve-fed trays.
+products:
+  - id: autopot-1pot-xl
+    model: 1Pot XL (25 L tank)
+    specs: { reservoirL: 25, valveCount: 1 }
+  - id: autopot-2pot
+    model: 2Pot (47 L tank)
+    specs: { reservoirL: 47, valveCount: 2 }
+  - id: autopot-4pot
+    model: 4Pot (47 L tank)
+    specs: { reservoirL: 47, valveCount: 4 }
+  - id: autopot-6pot
+    model: 6Pot (100 L tank)
+    specs: { reservoirL: 100, valveCount: 6 }
+provides:
+  - label: Irrigation
+    kind: irrigation
+    irrigationType: autopot
+    irrigationMode: passive
+    entityDomain: ""
